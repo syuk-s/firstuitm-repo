@@ -19,6 +19,6 @@ Route::get('/testing',function() {
     echo "this is testing";
 });
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
